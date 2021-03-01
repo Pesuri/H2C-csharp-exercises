@@ -6,8 +6,10 @@ namespace exercise_28
   {
     public static void Main(string[] args)
     {
-      // Write your code here:
-
+        Console.WriteLine("How old are you?");
+        int ika = Convert.ToInt32(Console.ReadLine());
+        if (ika >= 18) {Console.WriteLine("You are adult!");}
+        else            {Console.WriteLine("You are under age!");}
     }
   }
 }
