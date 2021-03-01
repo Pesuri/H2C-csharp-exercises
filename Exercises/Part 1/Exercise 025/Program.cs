@@ -6,7 +6,9 @@ namespace exercise_25
   {
     public static void Main(string[] args)
     {
-      // Write your code here:
+        Console.WriteLine("Give a number:");
+        int numero = Convert.ToInt32(Console.ReadLine());
+        if (numero == 1984) {Console.WriteLine("Orwell");}
 
     }
   }
