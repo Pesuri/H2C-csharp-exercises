@@ -7,8 +7,8 @@ namespace exercise_11
         public static void Main(string[] args)
         {
             int dayCount = 200;
-            double hoursToLunch = 1;
-            string statement = "Are you sure?";
+            double hoursToLunch = 3.5;
+            string statement = "It sure is!";
 
             // DO NOT TOUCH THESE!
             Console.WriteLine("Days to summer:");
