@@ -14,7 +14,7 @@ namespace exercise_39
             if      (numero == 0)   {break;}
             else                    {summa += numero;}
         }
-        Console.WriteLine("Total sum of numbers: " + summa);
+        Console.WriteLine("Total sum of numbers: " + summa); 
     }
   }
 }
