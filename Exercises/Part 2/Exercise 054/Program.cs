@@ -6,7 +6,7 @@ namespace exercise_54
   {
     public static void Main(String[] args)
     {
-        DivisibleByThreeInRange(-30, -3);
+        DivisibleByThreeInRange(9, -3);
 
     }
 
