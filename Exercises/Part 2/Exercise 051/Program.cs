@@ -6,12 +6,12 @@ namespace exercise_51
   {
     public static void Main(String[] args)
     {
-        PrintUntilNumber(-5);
+        PrintUntilNumber(-3);
     }
 
     public static void PrintUntilNumber(int number)
     {
-        if (number > 1)
+        if (number >= 1)
         {
             for (int i = 1; i <= number; i++){Console.WriteLine(i);}
         }
