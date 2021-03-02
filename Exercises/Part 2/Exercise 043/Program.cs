@@ -6,8 +6,9 @@ namespace exercise_43
   {
     public static void Main(string[] args)
     {
-      // Write your code here:
-      
+        int numero = Convert.ToInt32(Console.ReadLine());
+        if (numero < 0){numero = numero * -1;}
+        Console.WriteLine(numero);
     }
   }
 }
