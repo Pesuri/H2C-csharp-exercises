@@ -17,7 +17,7 @@ namespace exercise_52
         }
         else
         {
-            for (int i = number; i >=1; i--){Console.WriteLine(i);}
+            for (int i = number; i >=1; i--){Console.WriteLine(i);} 
         }
     }
 
