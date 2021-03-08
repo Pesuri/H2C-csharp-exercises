@@ -7,13 +7,20 @@ namespace exercise_81
   {
     public static void Main(string[] args)
     {
-      // You can test your method here
+        // You can test your method here
+        int[] array = {5, 1, 3, 4, 2};
+        PrintNeatly(array);
 
     }
 
     public static void PrintNeatly(int[] array)
     {
-
+        for(int i = 0; i < array.Length; i++)
+        {
+            Console.Write(array[i]);
+            if(i != array.Length - 1){Console.Write(", ");}
+        }
+        Console.WriteLine(); //Adds a linebreak so that "Press any key to continue..." line prints on the next line instead right after last numbers.
     }
   }
 }
