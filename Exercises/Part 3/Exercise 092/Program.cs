@@ -36,7 +36,7 @@ namespace exercise_92
                 longestNameInt = names[i].Length;
                 longestName = names[i];
             }
-        }
+        } 
         Console.WriteLine("Longest name: " + longestName);
         Console.WriteLine("Highest age: " + oldestAge);
     }
