@@ -7,16 +7,22 @@ namespace exercise_73
   {
     public static void Main(string[] args)
     {
-      List<int> list = new List<int>();
-      while (true)
-      {
-        int input = Convert.ToInt32(Console.ReadLine());
-        if (input == -1)
+        List<int> list = new List<int>();
+        while (true)
         {
-          break;
+            int input = Convert.ToInt32(Console.ReadLine());
+            if (input == -1)
+            {
+                break;
+            }
+            list.Add(input);
         }
-        list.Add(input);
-      }
+        int sum = 0;
+        foreach(int i in list)
+        {
+            sum += i;
+        }
+        Console.WriteLine("Sum: " + sum);
 
     }
   }
