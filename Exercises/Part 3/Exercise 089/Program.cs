@@ -7,8 +7,16 @@ namespace exercise_89
   {
     public static void Main(string[] args)
     {
-
-
+        string input = "1";
+        while(input != "")
+        {
+            input = Console.ReadLine();
+            if(input != "")
+            {
+                string[] split = input.Split(' ');
+                Console.WriteLine(split[split.Length-1]);
+            }
+        }
     }
   }
 }
