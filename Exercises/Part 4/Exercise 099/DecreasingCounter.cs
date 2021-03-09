@@ -20,12 +20,17 @@ namespace exercise_99
     {
       // write the method implementation here
       // the aim is to decrement the value of the counter by one
+      if(value > 0)
+      { 
+        value = value - 1;
+      }
 
     }
 
-    public void Reset() {
+    public void Reset() 
+    {
       // write the method implementation here∑
-
+      value = 0;
     }
   }
 }
