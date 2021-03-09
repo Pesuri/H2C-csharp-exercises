@@ -8,9 +8,9 @@ namespace exercise_103 {
       this.lastName = lastName;
     }
 
-    public override string ToString() {
-      // Should return for example "My name is Bond. James Bond."
-      return "";
+    public override string ToString() 
+    {
+      return "My name is " + firstName + ". " + firstName + " " + lastName + ".";
     }
   }
 }
