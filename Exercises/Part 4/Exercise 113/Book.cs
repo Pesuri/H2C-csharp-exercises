@@ -18,7 +18,7 @@ namespace exercise_113
 
         public override string ToString()
         {
-            return name + ", " + pages + " pages, " + year;
+            return name + ", " + pages + " pages, " + year; 
         }
     }
 }
