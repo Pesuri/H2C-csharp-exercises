@@ -9,7 +9,9 @@ namespace exercise_98
       // Create Product.cs and follow the instructions.
       // You can test your class with this.
       
-
+        Product Banana = new Product("Banana", 2.1, 300);
+        Banana.PrintProduct(); 
+             
     }
   }
 }
