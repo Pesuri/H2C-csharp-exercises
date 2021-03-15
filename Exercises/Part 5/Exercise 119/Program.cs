@@ -22,7 +22,7 @@ namespace exercise_119
             {
                 // Wait 100th of a second. 
                 // Sleep(1000) waits one second, if you want to test at slower pace.
-                System.Threading.Thread.Sleep(10);
+                System.Threading.Thread.Sleep(10); 
             }
             // Other half of try-catch pair. 
             catch (Exception e)
