@@ -21,10 +21,13 @@ namespace exercise_129
     }
 
     // BEGIN SOLUTION
-    public override bool Equals(object compared)
+    public bool Equals(Song compared)
     {
- 
-      return false;
+        if(this.artist == compared.artist & this.name == compared.name & this.durationInSeconds == compared.durationInSeconds)
+        {
+            return true;    
+        }        
+        return false;
     }
     // END SOLUTION
 
