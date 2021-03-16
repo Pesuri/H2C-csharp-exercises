@@ -10,12 +10,16 @@ namespace exercise_125
     {
       // return the weight of the person passed as the parameter
       // incrase weighings
+      weighings++;
+      return person.weight;
+
       return 0;
     }
 
     public void Feed(Person person)
     {
       // Increse the weight of the person with one kilogram
+      person.weight++;
     }
   }
 }
