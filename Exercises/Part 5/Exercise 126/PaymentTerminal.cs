@@ -9,6 +9,7 @@ namespace exercise_126
     public PaymentTerminal()
     {
       // register initially has 1000 euros of money
+      this.money = 1000;
     }
 
     public double DrinkCoffee(double payment)
@@ -16,8 +17,13 @@ namespace exercise_126
       // an coffee now costs 2.50 euros
       // increase the amount of cash by the price of an coffee mean and return the change
       // if the payment parameter is not large enough, no coffee is sold and the method should return the whole payment
-
-      return 0;
+      if(payment >= 2.5)    
+      { 
+        money += 2.5; 
+        coffeeAmount++; 
+        return payment - 2.5; 
+      }
+      return payment;
     }
 
     public double EatLunch(double payment)
@@ -25,8 +31,13 @@ namespace exercise_126
       // a lunch now costs 10.30 euros
       // increase the amount of cash by the price of a lunch and return the change
       // if the payment parameter is not large enough, no lunch is sold and the method should return the whole payment
-
-      return 0;
+      if(payment >= 10.3)   
+      { 
+        money += 10.3; 
+        lunchAmount++; 
+        return payment - 10.3; 
+      }
+      return payment;
     }
 
     public bool DrinkCoffee(PaymentCard card)
@@ -34,7 +45,12 @@ namespace exercise_126
       // a coffee costs 2.50 euros
       // if the payment card has enough money, the balance of the card is decreased by the price, and the method returns true
       // otherwise false is returned
-
+      if(card.balance >= 2.5)   
+      {
+        card.TakeMoney(2.5); 
+        coffeeAmount++; 
+        return true; 
+      }
       return false;
     }
 
@@ -43,13 +59,18 @@ namespace exercise_126
       // a lunch costs 10.30 euros
       // if the payment card has enough money, the balance of the card is decreased by the price, and the method returns true
       // otherwise false is returned
+      if(card.balance >= 10.3)   
+      { 
+        card.TakeMoney(10.3); 
+        lunchAmount++; 
+        return true; 
+      }
       return false;
     }
 
     public void AddMoneyToCard(PaymentCard card, double sum)
     {
-      // ...
-
+        card.AddMoney(sum);
     }
 
     public override string ToString()
