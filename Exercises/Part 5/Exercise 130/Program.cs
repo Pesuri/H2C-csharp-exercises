@@ -27,10 +27,22 @@ namespace exercise_130
         // Remember to print
         // "The book is already on the list. Let's not add the same book again."
         // If the list Contains the book
+        bool found = false;
 
-
-
-
+        foreach(Book compared in books)
+        {
+            if(book.Equals(compared))
+            {
+                Console.WriteLine("Found");
+                found = true;
+                break;
+            }
+        }
+        if(!found)
+        {
+            books.Add(book);
+        }
+        
         // END SOLUTION
       }
 
