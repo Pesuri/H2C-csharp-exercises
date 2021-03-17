@@ -21,12 +21,26 @@ namespace exercise_129
     }
 
     // BEGIN SOLUTION
-    public bool Equals(Song compared)
+    public override bool Equals(object compared)
     {
-        if(this.artist == compared.artist & this.name == compared.name & this.durationInSeconds == compared.durationInSeconds)
+        if(this == compared)
         {
             return true;    
-        }        
+        }  
+
+        if(compared == null || !this.GetType().Equals(compared.GetType()))
+        {
+            return false;
+        }
+        
+        Song comparedSong = (Song)compared;
+
+        if(this.name == comparedSong.name &
+           this.artist == comparedSong.artist &
+           this.durationInSeconds == comparedSong.durationInSeconds)
+        {
+            return true;
+        }
         return false;
     }
     // END SOLUTION
