@@ -16,13 +16,12 @@ namespace exercise_131
       return this.identifier + ": " + this.name;
     }
 
-    public override bool Equals(object compared)
+    public bool Equals(Item compared)
     {
-
       //compare with Item.identifier
-
+      if(this.identifier == compared.identifier) {return true;}
       return false;
-      }
     }
 
   }
+}
